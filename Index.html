@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CDN -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Internal Refrences  -->
+    <link rel="stylesheet" href="Styling.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- Start Of NavBar  -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <!-- the Center Part -->
+      <!-- the collabsable button -->
+      <button id="collapseBtn" class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon  "></span>
+      </button>
+      <!-- the search icon in mobile view -->
+      <a id="searchMobile" class="nav-link position-absolute d-block d-md-none text-dark" href="#"><i class=" fs-4 bi bi-search"></i></a>
+     <!-- the collabsable btn -->
+      <div class="container  justify-content-center bg-dang  "> 
+        <img class="img-responsive  "  id="LogoImg" src="Images/Logo.png"  alt="Logo" loading="lazy"/>
+        
+        <div class="collapse navbar-collapse justify-content-center " id="navbarTogglerDemo03">
+          <ul class="navbar-nav  mb-2 mb-lg-0   ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="itemPage.html">GROCERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itemPage.html">FROZEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itemPage.html">GROCERY DRY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itemPage.html">BEVERAGES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itemPage.html">DAIRY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itemPage.html">DELI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itemPage.html">PRODUCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itemPage.html">MEAT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itemPage.html">BAKERY</a>
+            </li>
+          </ul>
+          <!-- the Right Elements -->
+          <ul class="navbar-nav mb-2 mb-lg-0 d-lg-none ">
+            <li class="nav-link d-none d-md-block"href="#">
+             <span> <i class=" fs-5 bi bi-search"></i></span>
+            </li>
+            <li class="nav-link"href="#">
+             <span> <i class="fs-5 bi bi-person"></i></span>
+            </li>
+            <li>
+            <a class="nav-link position-relative" href="#">
+             <i class="fs-5 bi bi-bag"></i>
+              <span id="badge" class="position-absolute start-75  translate-middle badge rounded-pill bg-danger">4</span>
+            </a>
+          </li>
+          </ul>
+       
+      </div>
+
+
+
+      <ul class="navbar-nav mb-2 mb-lg-0 d-lg-flex d-none ">
+        <li class="nav-link"href="#">
+         <span> <i class=" fs-5 bi bi-search"></i></span>
+        </li>
+        <li class="nav-link"href="#">
+         <span> <i class="fs-5 bi bi-person"></i></span>
+        </li>
+        <li>
+        <a class="nav-link position-relative" href="#">
+         <i class="fs-5 bi bi-bag"></i>
+          <span id="badge" class="position-absolute start-75  translate-middle badge rounded-pill bg-danger">5</span>
+        </a>
+      </li>
+      </ul>
+      </div>
+    </nav>
+<!-- the End of the NavBar -->
+
+<!-- the Start of the  main Body  -->
+<div class="container-fluid">
+
+  <!-- the start of carousel -->
+  <div class="row mt-1 ">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
+      <div class="carousel-indicators d-none d-md-block">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active  " data-bs-interval="2000">
+          <img src="Images/carousel1.png" class="d-none d-md-block w-75  " alt="items">
+          <img src="Images/carousel1.png" class="d-block d-md-none  w-100  " alt="items">
+          <div class="carousel-caption d-none d-md-block text-focus-in   Custom-Carousel">
+            <h2>Delivering Excellence Good Food People</h2>
+            <p>Many desktop publishing packages and web page editors now use Lorm ipsum as thier defultmodel text, and a search for 'lorem ipsum 'will uncover many web sites still in their infancy.</p>
+            <button id="btnShopNow" class="btn heartbeat">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Images/carousel1.png" class="d-none d-md-block w-75  " alt="items">
+          <img src="Images/carousel1.png" class="d-block d-md-none  w-100  " alt="items">
+          <div class="carousel-caption d-none d-md-block text-focus-in   Custom-Carousel">
+            <h2>Delivering Excellence Good Food People</h2>
+            <p>Many desktop publishing packages and web page editors now use Lorm ipsum as thier defultmodel text, and a search for 'lorem ipsum 'will uncover many web sites still in their infancy.</p>
+            <button id="btnShopNow" class="btn heartbeat">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img src="Images/carousel1.png" class="d-none d-md-block w-75  " alt="items">
+          <img src="Images/carousel1.png" class="d-block d-md-none  w-100  " alt="items">
+          <div class="carousel-caption d-none d-md-block text-focus-in   Custom-Carousel">
+            <h2>Delivering Excellence Good Food People</h2>
+            <p>Many desktop publishing packages and web page editors now use Lorm ipsum as thier defultmodel text, and a search for 'lorem ipsum 'will uncover many web sites still in their infancy.</p>
+            <button id="btnShopNow" class="btn heartbeat">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- the End Of Carousel -->
+
+
+
+  <!-- Start of New Arrival -->
+  <div class="row bg-light mt-2 px-5 pb-3  ">
+    <h1 class=" text-center my-4 wow bounceInUp">New Arrivals</h1>
+<!-- the start of the carousl -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- the first row of inner elements of the carousel -->
+      <div class="row  pt-4  mx-md-5 px-md-5 items justify-content-around " > 
+        <!-- the start mobile items layout -->
+        <!-- the first col -->
+        <div class="col-6 d-block d-md-none">
+
+          <div>
+          <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around ">
+            <span class="mobile-font-size ">Chicken Cajun 1Kg</span> <span class="text-danger  float-end mobile-font-size ">$ 5.500 </span><br>
+          </div>
+          </div>
+        </div>
+        <!-- the second col  -->
+        <div class="col-6 d-block d-md-none">
+
+
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around" >
+            <span class="mobile-font-size">Chicken Cajun 1Kg</span> <span class="text-danger mobile-font-size float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- the end of mobile items layout -->
+      <div class="d-none d-md-block col-3">
+        <!-- item desktop view unit -->
+        <!-- the start of first column -->
+        <div>
+          <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+          <div>
+          <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+        </div>
+        </div>
+      </div>
+  <!-- the end of thee first col -->
+  <!-- the start of the second col -->
+      <div class="d-none d-md-block col-3">
+        <div>
+          <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+          <div>
+          <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+        </div>
+        </div>
+  
+      </div>
+      <!-- the end of the second col -->
+     <!-- the start of the third col -->
+     <div class="d-none d-md-block col-3">
+      <div>
+        <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+        <div>
+        <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+      </div>
+      </div>
+  
+    </div>
+    <!-- the end of the third col -->
+     <!-- the start of the forth col -->
+     <div class="d-none d-md-block col-3">
+      <div>
+        <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+        <div>
+        <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+      </div>
+      </div>
+  
+    </div>
+  </div>
+    <!-- the end of the forth col -->
+
+    </div>
+    <!-- slide number two in carousel -->
+    <div class="carousel-item">
+
+<!-- the row of inner elements of the carousel -->
+<div class="row pt-4 mx-md-5 px-md-5  justify-content-around"> 
+
+
+   <!-- the start mobile items layout -->
+        <!-- the first col -->
+        <div class="col-6 d-block d-md-none">
+
+          <div>
+          <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around ">
+            <span class="mobile-font-size ">Chicken Cajun 1Kg</span> <span class="text-danger  float-end mobile-font-size ">$ 5.500 </span><br>
+          </div>
+          </div>
+        </div>
+        <!-- the second col  -->
+        <div class="col-6 d-block d-md-none">
+
+
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around" >
+            <span class="mobile-font-size">Chicken Cajun 1Kg</span> <span class="text-danger mobile-font-size float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- the end of mobile items layout -->
+
+  <div class="d-none d-md-block col-3">
+    <!-- item unit -->
+    <!-- the start of first column -->
+    <div>
+      <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+      <div>
+      <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+    </div>
+    </div>
+  </div>
+<!-- the end of thee first col -->
+<!-- the start of the second col -->
+  <div class="d-none d-md-block col-3">
+    <div>
+      <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+      <div>
+      <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+    </div>
+    </div>
+
+  </div>
+  <!-- the end of the second col -->
+ <!-- the start of the third col -->
+ <div class="d-none d-md-block col-3">
+  <div>
+    <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+    <div>
+    <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+  </div>
+  </div>
+
+</div>
+<!-- the end of the third col -->
+ <!-- the start of the forth col -->
+ <div class="d-none d-md-block col-3">
+  <div>
+    <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+    <div>
+    <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+  </div>
+  </div>
+
+</div>
+</div>
+<!-- the end of the forth col -->
+
+
+
+    </div>
+    <div class="carousel-item">
+
+      <!-- the third slide of the carousel -->
+      <!-- the row of inner elements of the carousel -->
+      <div class="row pt-4 mx-md-5 px-md-5 justify-content-around"> 
+        <!-- the start mobile items layout -->
+        <!-- the first col -->
+        <div class="col-6 d-block d-md-none">
+
+          <div>
+          <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around ">
+            <span class="mobile-font-size ">Chicken Cajun 1Kg</span> <span class="text-danger  float-end mobile-font-size ">$ 5.500 </span><br>
+          </div>
+          </div>
+        </div>
+        <!-- the second col  -->
+        <div class="col-6 d-block d-md-none">
+
+
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around" >
+            <span class="mobile-font-size">Chicken Cajun 1Kg</span> <span class="text-danger mobile-font-size float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- the end of mobile items layout -->
+
+        <div class="d-none d-md-block col-3">
+          <!-- item unit -->
+          <!-- the start of first column -->
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+            <div>
+            <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+        </div>
+    <!-- the end of thee first col -->
+    <!-- the start of the second col -->
+        <div class="d-none d-md-block col-3">
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+            <div>
+            <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+    
+        </div>
+        <!-- the end of the second col -->
+       <!-- the start of the third col -->
+       <div class="d-none d-md-block col-3">
+        <div>
+          <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+          <div>
+          <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+        </div>
+        </div>
+    
+      </div>
+      <!-- the end of the third col -->
+       <!-- the start of the forth col -->
+       <div class="d-none d-md-block col-3">
+        <div>
+          <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+          <div>
+          <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+        </div>
+        </div>
+    
+      </div>
+    </div>
+      <!-- the end of the forth col -->
+
+    </div>
+  </div>
+  <button  id="previousBtn" class="carousel-control-prev justify-content-start d-none d-md-flex " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+   <i class="fs-1 text-dark bi bi-arrow-left-circle"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button  id="nextBtn" class="carousel-control-next justify-content-end d-none d-md-flex " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <i class="fs-1 text-dark bi bi-arrow-right-circle"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+
+  </div>
+   <!-- the end of the carousl of the items -->
+
+
+   <!-- the start of brand and product area -->
+
+  <div class="row justify-content-center mt-5 pb-3">
+    <!-- the heading  -->
+    <div class="row justify-content-center">
+      <h3 class="text-center wow wow">Brand & Products</h3>
+      <p class="w-50 text-center">It is a long established fact that a redder will be distracted by the readable content of a page when looking at its layout. te point od using Loruim ipsum  </p>
+    </div>
+
+
+        <!-- the start of carousel brand -->
+
+   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+    <!-- the start of the first slider -->
+    <!-- the start of items block  -->
+
+<!-- the start of mobile layout  -->
+<div class="row d-block d-md-none justify-content-center py-5">
+  <div class=" col-12 my-1 ">
+    <div class="p-1 border-danger position-relative red-border w-100 ">
+      <button  class="btn btn-danger position-absolute brandBtn " >BEBETO</button>
+      <img src="Images/brandImg1.png" class="img-responsive w-100  ">
+    </div>
+     </div>
+  </div>
+
+<!-- the end of mobile layout -->
+
+
+    <!-- the start of  left col of the brand and product -->
+    <div class="row d-none  d-md-flex justify-content-center py-5">
+      <div class=" col-6 my-1 ">
+        <div class="p-1 border-danger position-relative red-border w-100 ">
+          <button  class="btn btn-danger position-absolute brandBtn " >BEBETO</button>
+          <img src="Images/brandImg1.png" class="img-responsive w-100  ">
+        </div>
+  
+      </div>
+  <!-- the end of the left colof the brand and product area  -->
+   <!-- the start of  right col of the brand and product -->
+   <div class=" col-6 my-1">
+    <div  class="p-1 border-danger position-relative red-border  ">
+      <button  class="btn btn-danger position-absolute brandBtn " >Alpen</button>
+      <img src="Images/branImg2.png" class="img-responsive w-100  ">
+    </div>
+  </div>
+   <!-- the end of the right colof the brand and product area  -->
+    </div>
+    <!-- the end of the brand and product area  -->
+    <!-- the end of items block -->
+
+<!-- the end of the first slider -->
+      
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+
+
+
+      <!-- the start of the second slider -->
+<!-- the start of items block  -->
+
+<!-- the start of mobile layout  -->
+<div class="row d-block d-md-none justify-content-center py-5">
+  <div class=" col-12 my-1 ">
+    <div class="p-1 border-danger position-relative red-border w-100 ">
+      <button  class="btn btn-danger position-absolute brandBtn " >BEBETO</button>
+      <img src="Images/brandImg1.png" class="img-responsive w-100  ">
+    </div>
+     </div>
+  </div>
+<!-- the end of mobile layout -->
+    <!-- the start of  left col of the brand and product -->
+    <div class="row d-none  d-md-flex justify-content-center py-5">
+      <div class=" col-6 my-1 ">
+        <div class="p-1 border-danger position-relative red-border w-100 ">
+          <button  class="btn btn-danger position-absolute brandBtn " >BEBETO</button>
+          <img src="Images/brandImg1.png" class="img-responsive w-100  ">
+        </div>
+  
+      </div>
+  <!-- the end of the left colof the brand and product area  -->
+   <!-- the start of  right col of the brand and product -->
+   <div class=" col-6 my-1">
+    <div  class="p-1 border-danger position-relative red-border  ">
+      <button  class="btn btn-danger position-absolute brandBtn " >Alpen</button>
+      <img src="Images/branImg2.png" class="img-responsive w-100  ">
+    </div>
+  </div>
+  </div>
+   <!-- the end of the right colof the brand and product area  -->
+    </div>
+    <!-- the end of the brand and product area  -->
+    <!-- the end of items block -->
+<!-- the end of the second slider -->
+    <div class="carousel-item">
+     <!-- the start of the third slider -->
+<!-- the start of items block  -->
+
+<!-- the start of mobile layout  -->
+<div class="row d-block d-md-none justify-content-center py-5">
+  <div class=" col-12 my-1 ">
+    <div class="p-1 border-danger position-relative red-border w-100 ">
+      <button  class="btn btn-danger position-absolute brandBtn " >BEBETO</button>
+      <img src="Images/brandImg1.png" class="img-responsive w-100  ">
+    </div>
+     </div>
+  </div>
+<!-- the end of mobile layout -->
+    <!-- the start of  left col of the brand and product -->
+    <div class="row d-none  d-md-flex justify-content-center py-5">
+      <div class=" col-6 my-1 ">
+        <div class="p-1 border-danger position-relative red-border w-100 ">
+          <button  class="btn btn-danger position-absolute brandBtn " >BEBETO</button>
+          <img src="Images/brandImg1.png" class="img-responsive w-100  ">
+        </div>
+  
+      </div>
+  <!-- the end of the left colof the brand and product area  -->
+   <!-- the start of  right col of the brand and product -->
+   <div class=" col-6 my-1">
+    <div  class="p-1 border-danger position-relative red-border  ">
+      <button  class="btn btn-danger position-absolute brandBtn " >Alpen</button>
+      <img src="Images/branImg2.png" class="img-responsive w-100  ">
+    </div>
+  </div>
+  </div>
+   <!-- the end of the right col of the brand and product area  -->
+    </div>
+    <!-- the end of the brand and product area  -->
+    <!-- the end of items block -->
+ <!-- the end of the third slider -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+ </div>
+ <!-- the end of the carousel brand -->
+
+
+
+  <!-- the start of top 10 products -->
+
+
+
+  <div class="row bg-light mt-2 px-5 pb-3  ">
+    <h1 class=" text-center my-4">Top 10 Products</h1>
+<!-- the start of the carousl -->
+<div id="carouselExampleControl" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- the first row of inner elements of the carousel -->
+      <div class="row pt-4 mx-md-5 px-md-5   items justify-content-around " > 
+        <!-- the start mobile items layout -->
+        <!-- the first col -->
+        <div class="col-6 d-block d-md-none">
+
+          <div>
+          <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around ">
+            <span class="mobile-font-size ">Chicken Cajun 1Kg</span> <span class="text-danger  float-end mobile-font-size ">$ 5.500 </span><br>
+          </div>
+          </div>
+        </div>
+        <!-- the second col  -->
+        <div class="col-6 d-block d-md-none">
+
+
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around" >
+            <span class="mobile-font-size">Chicken Cajun 1Kg</span> <span class="text-danger mobile-font-size float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- the end of mobile items layout -->
+      <div class="d-none d-md-block col-3">
+        <!-- item desktop view unit -->
+        <!-- the start of first column -->
+        <div>
+          <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+          <div>
+          <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+        </div>
+        </div>
+      </div>
+  <!-- the end of thee first col -->
+  <!-- the start of the second col -->
+      <div class="d-none d-md-block col-3">
+        <div>
+          <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+          <div>
+          <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+        </div>
+        </div>
+  
+      </div>
+      <!-- the end of the second col -->
+     <!-- the start of the third col -->
+     <div class="d-none d-md-block col-3">
+      <div>
+        <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+        <div>
+        <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+      </div>
+      </div>
+  
+    </div>
+    <!-- the end of the third col -->
+     <!-- the start of the forth col -->
+     <div class="d-none d-md-block col-3">
+      <div>
+        <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+        <div>
+        <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+      </div>
+      </div>
+  
+    </div>
+  </div>
+    <!-- the end of the forth col -->
+
+    </div>
+    <!-- slide number two in carousel -->
+    <div class="carousel-item">
+
+<!-- the row of inner elements of the carousel -->
+<div class="row pt-4 mx-md-5 px-md-5  justify-content-around"> 
+
+
+   <!-- the start mobile items layout -->
+        <!-- the first col -->
+        <div class="col-6 d-block d-md-none">
+
+          <div>
+          <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around ">
+            <span class="mobile-font-size ">Chicken Cajun 1Kg</span> <span class="text-danger  float-end mobile-font-size ">$ 5.500 </span><br>
+          </div>
+          </div>
+        </div>
+        <!-- the second col  -->
+        <div class="col-6 d-block d-md-none">
+
+
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around" >
+            <span class="mobile-font-size">Chicken Cajun 1Kg</span> <span class="text-danger mobile-font-size float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- the end of mobile items layout -->
+
+  <div class="d-none d-md-block col-3">
+    <!-- item unit -->
+    <!-- the start of first column -->
+    <div>
+      <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+      <div>
+      <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+    </div>
+    </div>
+  </div>
+<!-- the end of thee first col -->
+<!-- the start of the second col -->
+  <div class="d-none d-md-block col-3">
+    <div>
+      <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+      <div>
+      <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+    </div>
+    </div>
+
+  </div>
+  <!-- the end of the second col -->
+ <!-- the start of the third col -->
+ <div class="d-none d-md-block col-3">
+  <div>
+    <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+    <div>
+    <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+  </div>
+  </div>
+
+</div>
+<!-- the end of the third col -->
+ <!-- the start of the forth col -->
+ <div class="d-none d-md-block col-3">
+  <div>
+    <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+    <div>
+    <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+  </div>
+  </div>
+
+</div>
+</div>
+<!-- the end of the forth col -->
+
+
+
+    </div>
+    <div class="carousel-item">
+
+      <!-- the third slide of the carousel -->
+      <!-- the row of inner elements of the carousel -->
+      <div class="row pt-4 mx-md-5 px-md-5 justify-content-around"> 
+         <!-- the start mobile items layout -->
+        <!-- the first col -->
+        <div class="col-6 d-block d-md-none">
+
+          <div>
+          <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around ">
+            <span class="mobile-font-size ">Chicken Cajun 1Kg</span> <span class="text-danger  float-end mobile-font-size ">$ 5.500 </span><br>
+          </div>
+          </div>
+        </div>
+        <!-- the second col  -->
+        <div class="col-6 d-block d-md-none">
+
+
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 " src="Images/item1.png"></a> 
+            <div class="d-flex justify-content-around" >
+            <span class="mobile-font-size">Chicken Cajun 1Kg</span> <span class="text-danger mobile-font-size float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- the end of mobile items layout -->
+
+        <div class="d-none d-md-block col-3">
+          <!-- item unit -->
+          <!-- the start of first column -->
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+            <div>
+            <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+        </div>
+    <!-- the end of thee first col -->
+    <!-- the start of the second col -->
+        <div class="d-none d-md-block col-3">
+          <div>
+            <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+            <div>
+            <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+          </div>
+          </div>
+    
+        </div>
+        <!-- the end of the second col -->
+       <!-- the start of the third col -->
+       <div class="d-none d-md-block col-3">
+        <div>
+          <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+          <div>
+          <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+        </div>
+        </div>
+    
+      </div>
+      <!-- the end of the third col -->
+       <!-- the start of the forth col -->
+       <div class="d-none d-md-block col-3">
+        <div>
+          <a href="#"> <img class=" w-100 mb-3 shadow-drop-2-center" src="Images/item1.png"></a> 
+          <div>
+          <span>Chicken Cajun 1Kg</span> <span class="text-danger float-end ">$ 5.500 </span><br>
+        </div>
+        </div>
+    
+      </div>
+    </div>
+      <!-- the end of the forth col -->
+
+    </div>
+  </div>
+  <button  id="previousBtn" class="carousel-control-prev justify-content-start d-none d-md-flex " type="button" data-bs-target="#carouselExampleControl" data-bs-slide="prev">
+   <i class="fs-1 text-dark bi bi-arrow-left-circle"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button  id="nextBtn" class="carousel-control-next justify-content-end d-none d-md-flex " type="button" data-bs-target="#carouselExampleControl" data-bs-slide="next">
+    <i class="fs-1 text-dark bi bi-arrow-right-circle"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+  <!-- the end of top 10 products  -->
+
+  <!-- the start of alpen trade section -->
+
+   <div class="row bg-light mt-3 pt-1 d-flex pb-3 " style="width:95%">
+     <img src="Images/blog.png" class="img-responsive col-12 col-md-6  red-border p-1  ">
+     <!-- start of alpen trade header section  -->
+        <div id="exploreDiv"  class="text-center col-12 col-md-6   ">
+          <h3 class="text-center">Alpen Trade</h3>
+          <p class="text-center ">Many desktop publishing packages and web page editors now use lorem ipsum as their deafult model text, and search for 'Loreum ipsum will uncover many web sites still in thier infancy. various versions have involved over the years, sometimes by. '</p>
+           <button id="exploreNow" class="btn btn-danger mt-2 heartbeat"type="button">Explore More</button>
+
+           </div>
+   </div>
+  </div>
+     <!-- end of alpen trade header section  -->
+
+
+     <!-- the start of the footer  -->
+
+<footer class="text-center text-lg-start  text-dark pt-1">
+ 
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- the logo and heading section -->
+      <div class="row d-flex">
+        <div class="col-md-3 col-12">
+          <img src="Images/Logo.png" class="img-responsive w-50  ">
+        </div>
+        <div class="col-md-9 d-md-block d-none">
+          <h4 class="w-75 text-dark">
+            Many desktop publishing packages and web page editors now use lorem ipsum as their deafult model text.
+          </h4>
+        </div>
+
+      </div>
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+         
+         
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-start text-md-cente">
+           <a class="nav-link text-dark" href="#">Products<span class="d-inline d-md-none"> +</span></a> 
+          </h6>
+          <hr class="d-block d-md-none">
+          <p>
+            <a href="#!" class="nav-link text-dark d-none d-md-block">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="nav-link text-dark d-none d-md-block">React</a>
+          </p>
+          <p>
+            <a href="#!" class="nav-link text-dark d-none d-md-block">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="nav-link text-dark d-none d-md-block">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-start text-md-cente ">
+           <a class="nav-link text-dark" href="#"> Useful links<span class="d-inline d-md-none "> +</span></a>
+          </h6>
+          <hr class="d-block d-md-none">
+          <p>
+            <a href="#!" class="nav-link text-dark d-none d-md-block">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="nav-link text-dark d-none d-md-block">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="nav-link text-dark d-none d-md-block">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="nav-link text-dark d-none d-md-block">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  ">
+          <!-- Links -->
+          <div class="row ">
+          <i class=" col-4 bi bi-twitter text-dark fs-3"></i>
+         
+            <i class=" col-4 bi bi-instagram text-dark fs-3 "></i>
+         
+         <i class=" col-4 bi bi-facebook text-dark fs-3 "></i> 
+        </div>
+        <!-- the row of we use -->
+        <div class="row d-none d-md-block">
+          <h5 class="text-dark mt-2">We Accept</h5>
+        </div>
+        <!-- visa and mastercard -->
+        <div class="row d-none d-md-block">
+          <div class="col-3"> <img class="img-responsive w-100" src="images/visa.png" ></div>
+          <div class="col-3"> <img class="img-responsive w-100" src="images/masterchard.png"></div>
+        </div>
+        <!-- top page button  -->
+        <div class="row d-flex d-md-none justify-content-center mt-5 "><button href="#" id="upBtn" class="  btn btn-danger shake-vertical"><i class="fs-1 bi bi-arrow-up-square"></i> </button></div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="#">Mark's</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+     <!-- the end of the footer -->
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- the end of alpen trade section -->
+
+
+
+
+
+
+
+
+
+
+</div>
+  
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+</body>
+</html>
+
+
+
