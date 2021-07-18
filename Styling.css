@@ -42,8 +42,14 @@ text-align: center;
     text-align: start;
 }
 .mobile-font-size{
-        font-size:2vw;
+        font-size: 1.3vw;
+       
 }
+@media only screen and (max-width: 600px) {
+        .mobile-font-size{
+                font-size:2.9vw;
+            }
+      }
 #btnShopNow{
     background-color: #ee1d23;
     width:40%;
